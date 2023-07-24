@@ -1,0 +1,22 @@
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Id="VersionInserterVSIX.03d5c08c-ea33-4cfd-8c0c-de846c0d18de" Version="1.0" Language="en-US" Publisher="Robert Maziar" />
+    <DisplayName>Version Inserter VSIX</DisplayName>
+    <Description xml:space="preserve">Insert a version number directly into the text editor, avoiding potential typos and headaches. 
+Currently the only version format supported is a concatenation of year, month, day, hour and minute, commonly used for migration versions.</Description>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0, 18.0)">
+      <ProductArchitecture>amd64</ProductArchitecture>
+    </InstallationTarget>
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" Version="[4.5,)" />
+  </Dependencies>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[17.0,18.0)" DisplayName="Visual Studio core editor" />
+  </Prerequisites>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="VersionInserterVSIX.pkgdef" />
+  </Assets>
+</PackageManifest>
